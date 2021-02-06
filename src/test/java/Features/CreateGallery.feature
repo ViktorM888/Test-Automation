@@ -1,4 +1,4 @@
-Feature: CreateGalleryFeature
+Feature: CreateGalleryFeatures
   This feature deals with the create gallery functionality of the application
 
   Scenario Outline: Create new correct gallery
