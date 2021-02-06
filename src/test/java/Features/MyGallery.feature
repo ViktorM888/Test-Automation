@@ -1,4 +1,4 @@
-Feature: MyGalleryFeature
+Feature: MyGalleryFeatures
   This feature deals with my gallery functionality of the application
 
   Scenario Outline: Find the correct gallery just created
