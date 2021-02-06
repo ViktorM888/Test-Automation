@@ -1,4 +1,4 @@
-Feature: LoginFeature
+Feature: LoginFeatures
   This feature deals with the login functionality of the application
 
   Scenario Outline: Login with correct email and password
