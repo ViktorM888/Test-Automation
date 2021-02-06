@@ -1,4 +1,4 @@
-Feature: LogoutFeature
+Feature: LogoutFeatures
   This feature deals with the logout functionality of the application
 
   Scenario Outline: Logout with correct email and password
