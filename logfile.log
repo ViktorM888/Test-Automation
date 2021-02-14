@@ -448,3 +448,105 @@
 2021-02-14 10:13:59,521 INFO  [Log] AFTER scenario is started 
 2021-02-14 10:13:59,522 INFO  [Log] Test scenario is in status passed 
 2021-02-14 10:13:59,522 INFO  [Log] ============= 
+2021-02-14 11:16:44,575 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:16:44,575 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                 Create new correct gallery       $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+2021-02-14 11:16:44,575 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:17:11,631 INFO  [Log] Clicked on Login Button 
+2021-02-14 11:17:15,187 INFO  [Log] Entered Email 
+2021-02-14 11:17:18,743 INFO  [Log] Entered Password 
+2021-02-14 11:17:22,287 INFO  [Log] Clicked on submit button 
+2021-02-14 11:18:58,361 INFO  [Log] Clicked on Create Gallery 
+2021-02-14 11:19:01,854 INFO  [Log] Entered Title for Gallery 
+2021-02-14 11:19:05,379 INFO  [Log] Entered Description for Gallery 
+2021-02-14 11:19:09,038 INFO  [Log] Entered URL of image for Gallery 
+2021-02-14 11:19:12,536 INFO  [Log] Clicked on submit button 
+2021-02-14 11:19:18,052 INFO  [Log] Clicked on All Galleries button 
+2021-02-14 11:19:18,134 INFO  [Log] Checked whether the image is present 
+2021-02-14 11:19:18,135 INFO  [Log] AFTER scenario is started 
+2021-02-14 11:19:18,135 INFO  [Log] Test scenario is in status passed 
+2021-02-14 11:19:18,135 INFO  [Log] ============= 
+2021-02-14 11:19:19,061 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:19:19,061 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                 Create new incorrect gallery with missing image       $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+2021-02-14 11:19:19,061 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:19:45,498 INFO  [Log] Clicked on Login Button 
+2021-02-14 11:19:49,003 INFO  [Log] Entered Email 
+2021-02-14 11:19:52,525 INFO  [Log] Entered Password 
+2021-02-14 11:19:56,027 INFO  [Log] Clicked on submit button 
+2021-02-14 11:20:01,496 INFO  [Log] Clicked on Create Gallery 
+2021-02-14 11:20:05,111 INFO  [Log] Entered Title for Gallery 
+2021-02-14 11:20:08,636 INFO  [Log] Entered Description for Gallery 
+2021-02-14 11:20:12,168 INFO  [Log] Entered URL of image for Gallery 
+2021-02-14 11:20:15,643 INFO  [Log] Clicked on submit button 
+2021-02-14 11:20:21,009 INFO  [Log] AFTER scenario is started 
+2021-02-14 11:20:21,009 INFO  [Log] Test scenario is in status passed 
+2021-02-14 11:20:21,009 INFO  [Log] ============= 
+2021-02-14 11:20:21,949 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:20:21,949 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                 Login with correct email and password       $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+2021-02-14 11:20:21,949 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:20:46,033 INFO  [Log] Clicked on Login Button 
+2021-02-14 11:20:49,588 INFO  [Log] Entered Email 
+2021-02-14 11:20:53,095 INFO  [Log] Entered Password 
+2021-02-14 11:20:56,603 INFO  [Log] Clicked on submit button 
+2021-02-14 11:21:02,028 INFO  [Log] AFTER scenario is started 
+2021-02-14 11:21:02,028 INFO  [Log] Test scenario is in status passed 
+2021-02-14 11:21:02,028 INFO  [Log] ============= 
+2021-02-14 11:21:02,925 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:21:02,925 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                 Login with incorrect email and password       $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+2021-02-14 11:21:02,925 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:21:26,891 INFO  [Log] Clicked on Login Button 
+2021-02-14 11:21:30,469 INFO  [Log] Entered Email 
+2021-02-14 11:21:33,988 INFO  [Log] Entered Password 
+2021-02-14 11:21:37,497 INFO  [Log] Clicked on submit button 
+2021-02-14 11:21:39,973 INFO  [Log] Refreshed the Page 
+2021-02-14 11:21:43,515 INFO  [Log] Entered Email 
+2021-02-14 11:21:47,066 INFO  [Log] Entered Password 
+2021-02-14 11:21:50,528 INFO  [Log] Clicked on submit button 
+2021-02-14 11:22:03,855 INFO  [Log] Received Error Message 
+2021-02-14 11:22:03,855 INFO  [Log] AFTER scenario is started 
+2021-02-14 11:22:03,855 INFO  [Log] Test scenario is in status passed 
+2021-02-14 11:22:03,855 INFO  [Log] ============= 
+2021-02-14 11:22:04,702 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:22:04,702 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                 Login with empty username and password       $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+2021-02-14 11:22:04,702 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:22:30,840 INFO  [Log] Clicked on Login Button 
+2021-02-14 11:22:34,380 INFO  [Log] Clicked on submit button 
+2021-02-14 11:22:36,388 INFO  [Log] AFTER scenario is started 
+2021-02-14 11:22:36,388 INFO  [Log] Test scenario is in status passed 
+2021-02-14 11:22:36,388 INFO  [Log] ============= 
+2021-02-14 11:22:37,290 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:22:37,290 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                 Logout with correct email and password       $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+2021-02-14 11:22:37,290 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:23:01,276 INFO  [Log] Clicked on Login Button 
+2021-02-14 11:23:04,814 INFO  [Log] Entered Email 
+2021-02-14 11:23:08,288 INFO  [Log] Entered Password 
+2021-02-14 11:23:11,822 INFO  [Log] Clicked on submit button 
+2021-02-14 11:23:22,794 INFO  [Log] Clicked on Logout button 
+2021-02-14 11:23:22,794 INFO  [Log] AFTER scenario is started 
+2021-02-14 11:23:22,794 INFO  [Log] Test scenario is in status passed 
+2021-02-14 11:23:22,794 INFO  [Log] ============= 
+2021-02-14 11:23:23,688 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:23:23,688 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                 Find the correct gallery just created       $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+2021-02-14 11:23:23,688 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:23:47,620 INFO  [Log] Clicked on Login Button 
+2021-02-14 11:23:51,154 INFO  [Log] Entered Email 
+2021-02-14 11:23:54,682 INFO  [Log] Entered Password 
+2021-02-14 11:23:58,217 INFO  [Log] Clicked on submit button 
+2021-02-14 11:24:03,710 INFO  [Log] Clicked on My Gallery button 
+2021-02-14 11:24:04,670 INFO  [Log] Entered words into Search bar 
+2021-02-14 11:24:10,124 INFO  [Log] Clicked on Filter button 
+2021-02-14 11:24:10,124 INFO  [Log] AFTER scenario is started 
+2021-02-14 11:24:10,124 INFO  [Log] Test scenario is in status passed 
+2021-02-14 11:24:10,124 INFO  [Log] ============= 
+2021-02-14 11:24:11,297 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:24:11,297 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                 Find the incorrect gallery just created       $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+2021-02-14 11:24:11,297 INFO  [Log] **************************************************************************************** 
+2021-02-14 11:24:35,541 INFO  [Log] Clicked on Login Button 
+2021-02-14 11:24:39,124 INFO  [Log] Entered Email 
+2021-02-14 11:24:42,655 INFO  [Log] Entered Password 
+2021-02-14 11:24:46,174 INFO  [Log] Clicked on submit button 
+2021-02-14 11:24:51,702 INFO  [Log] Clicked on My Gallery button 
+2021-02-14 11:24:52,735 INFO  [Log] Entered words into Search bar 
+2021-02-14 11:24:58,252 INFO  [Log] Clicked on Filter button 
+2021-02-14 11:24:58,252 INFO  [Log] AFTER scenario is started 
+2021-02-14 11:24:58,252 INFO  [Log] Test scenario is in status passed 
+2021-02-14 11:24:58,252 INFO  [Log] ============= 
