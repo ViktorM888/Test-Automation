@@ -25,7 +25,7 @@ public class DriverFactory {
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        String baseURL = "https://gallery-app.vivifyideas.com/";
+        String baseURL = "https://qa-sandbox.apps.htec.rs/";
         driver.get(baseURL);
         waitVar = new WebDriverWait(driver, 15);
 

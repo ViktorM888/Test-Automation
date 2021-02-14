@@ -35,6 +35,25 @@ public class Steps {
                 return element;
         }
 
+        public static WebElement GetElementByLinkTextWithoutCondition(String linkText) throws InterruptedException {
+
+                WebElement element = null;
+                for (int i = 1; i < 20; i = i + 1)
+                        try {
+
+                                element = driver.findElement(By.linkText(linkText));
+                                break;
+                        } catch (Exception e) {
+                                //default:500, put lower number for less waiting time
+                                Thread.sleep(500);
+
+                                if (i == 19) {
+                                        isVisible = false;
+                                        break;
+                                }
+                        }
+                return element;
+        }
 
         @Given("^Web browser is at web page ([^\"]*)$")
         public void iNavigateToTheCorrectPageWebPage(String webpage) throws Throwable {
@@ -59,17 +78,31 @@ public class Steps {
         @And("^I click on Submit button$")
         public void iClickSubmitButton() throws Throwable {
                 LoginPage.submitButton();
-                Thread.sleep(2000);
+        }
+
+        @And("^I click on Logout button$")
+        public void iClickLogoutButton() throws Throwable {
+                LoginPage.logoutButton();
         }
 
         @Then("^I should see the main page$")
         public void iShouldSeeTheMainPage() throws Throwable {
-                HomePage.allGalleriesTitle();
+                HomePage.dashboardTitle();
         }
 
-        @Then("^I should see the error message$")
-        public void iShouldSeeTheErrorMessage() throws Throwable {
-                LoginPage.errorMessage();
+        @Then("^I should see the Email error message$")
+        public void iShouldSeeTheEmailErrorMessage() throws Throwable {
+                LoginPage.emailErrorMessage();
+        }
+
+        @Then("^I should see the User not found error message$")
+        public void iShouldSeeTheUserNotFoundErrorMessage() throws Throwable {
+                LoginPage.userNotFoundErrorMessage();
+        }
+
+        @Then("^I should see the Password error message$")
+        public void iShouldSeeThePasswordErrorMessage() throws Throwable {
+                LoginPage.passwordErrorMessage();
         }
 
         @Then("^I refresh the page$")
@@ -77,54 +110,78 @@ public class Steps {
                 LoginPage.refreshWebPage();
         }
 
-        @Then("^I click on Create Gallery$")
-        public void iClickCreateGallery() throws Throwable {
-                HomePage.createGallery();
+        @Then("^I click on Use Cases Label$")
+        public void iClickOnUseCasesLabel() throws Throwable {
+                HomePage.useCasesLabel();
         }
 
-        @And("^I enter title ([^\"]*) for the Gallery$")
-        public void iEnterTitleForGallery(String name) throws Throwable {
-                HomePage.galleryTitle(name);
+        @Then("^I click on Create Use Cases Button$")
+        public void iClickOnCreateUseCasesButton() throws Throwable {
+                HomePage.createUseCases();
         }
 
-        @And("^I enter description ([^\"]*) for the Gallery$")
-        public void iEnterDescriptionForGallery(String name) throws Throwable {
-                HomePage.galleryDescription(name);
+        @Then("^I enter ([^\"]*) as title for new Use Case$")
+        public void iEnterTitle(String title) throws Throwable {
+                HomePage.titleCase(title);
         }
 
-        @And("^I enter URL ([^\"]*) of image for the Gallery$")
-        public void iEnterURLForGallery(String link) throws Throwable {
-                HomePage.galleryImage(link);
+        @Then("^I enter ([^\"]*) as description for new Use Case$")
+        public void iEnterDescription(String desc) throws Throwable {
+                HomePage.descCase(desc);
         }
 
-        @And("^I click on All Galleries$")
-        public void iClickOnAllGalleries() throws Throwable {
-                HomePage.allGalleries();
+        @Then("^I enter ([^\"]*) as expected result for new Use Case$")
+        public void iEnterExpectedResult(String expectedResult) throws Throwable {
+                HomePage.expResult(expectedResult);
         }
 
-        @And("^image is shown in gallery$")
-        public void imageIsShownInGallery() throws Throwable {
-                HomePage.imageGallery();
+        @Then("^I click on toggle for automated tests$")
+        public void iClickOnAutomatedTests() throws Throwable {
+                HomePage.toggleButton();
         }
 
-        @And("^I click on My Galleries$")
-        public void iClickOnMyGalleries() throws Throwable {
-                HomePage.myGallery();
+        @Then("^I enter ([^\"]*) as case steps for new Use Case$")
+        public void iEnterCaseSteps(String steps) throws Throwable {
+                HomePage.caseSteps(steps);
         }
 
-        @And("^I enter into Search field ([^\"]*) for my gallery$")
-        public void iEnterSearchForGallery(String name) throws Throwable {
-                HomePage.searchTextField(name);
+        @Then("^I click on First Use Case to edit$")
+        public void iClickFirstUseCase() throws Throwable {
+                HomePage.editFirstUseCase();
         }
 
-        @And("^I click on Filter button$")
-        public void iClickOnFilter() throws Throwable {
-                HomePage.filterButton();
+        @Then("^I click on Second Use Case to edit$")
+        public void iClickSecondUseCase() throws Throwable {
+                HomePage.editSecondUseCase();
         }
 
-        @And("^I click on Logout button$")
-        public void iClickOnLogout() throws Throwable {
-                HomePage.logoutButton();
+        @Then("^I click on Third Use Case to edit$")
+        public void iClickThirdUseCase() throws Throwable {
+                HomePage.editThirdUseCase();
         }
+
+        @Then("^I click on Fourth Use Case to edit$")
+        public void iClickFourthUseCase() throws Throwable {
+                HomePage.editFourthUseCase();
+        }
+
+        @Then("^I input how many letters were in the previous field$")
+        public void inputLetters() throws Throwable {
+                HomePage.editTitleCase();
+                HomePage.editDescription();
+                HomePage.editExpectedResult();
+                HomePage.editFirstStep();
+                HomePage.editSecondStep();
+                HomePage.editThirdStep();
+                HomePage.editFourthStep();
+                HomePage.editFifthStep();
+
+        }
+
+
+
+
+
+
 
 }
