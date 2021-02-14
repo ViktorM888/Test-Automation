@@ -5,7 +5,6 @@ import Utils.Log;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 import static Steps.Steps.GetElementByXpathWithoutCondition;
 
 public class LoginPage extends DriverFactory {
@@ -16,13 +15,13 @@ public class LoginPage extends DriverFactory {
         String Title = driver.getTitle();
         CommonPage.WaitForElementToBeAvailable(URL);
         CommonPage.WaitForElementToBeAvailable(Title);
-        Assert.assertEquals("https://qa-sandbox.apps.htec.rs/", URL);
-        Assert.assertEquals("Sandbox", Title);
+        Assert.assertEquals("https://gallery-app.vivifyideas.com/", URL);
+        Assert.assertEquals("gallery-app", Title);
     }
 
 
     private static String loginButton_xpath() throws InterruptedException {
-        String xpath = ".//*[contains(text(), 'Login')]";
+        String xpath = ".//a[contains(text(),'Login')]";
         return xpath;
     }
 
@@ -34,26 +33,26 @@ public class LoginPage extends DriverFactory {
         Log.info("Clicked on Login Button");
     }
 
-    private static String emailTextField_xpath() throws InterruptedException {
-        String xpath = ".//input[@type='email']";
+    private static String emailTestField_xpath() throws InterruptedException {
+        String xpath = ".//input[@id='email']";
         return xpath;
     }
 
     public static void email(String name) throws InterruptedException {
-        String xpath = emailTextField_xpath();
+        String xpath = emailTestField_xpath();
         WebElement element = GetElementByXpathWithoutCondition(xpath);
         CommonPage.WaitForElementToBeAvailable(xpath);
         element.sendKeys(name);
         Log.info("Entered Email");
     }
 
-    private static String passwordTextField_xpath() throws InterruptedException {
-        String xpath = ".//input[@type='password']";
+    private static String password_xpath() throws InterruptedException {
+        String xpath = ".//input[@id='password']";
         return xpath;
     }
 
     public static void password(String name) throws InterruptedException {
-        String xpath = passwordTextField_xpath();
+        String xpath = password_xpath();
         WebElement element = GetElementByXpathWithoutCondition(xpath);
         CommonPage.WaitForElementToBeAvailable(xpath);
         element.sendKeys(name);
@@ -70,44 +69,15 @@ public class LoginPage extends DriverFactory {
         WebElement element = GetElementByXpathWithoutCondition(xpath);
         CommonPage.WaitForElementToBeAvailable(xpath);
         element.click();
-        Log.info("Clicked on Submit Button");
+        Log.info("Clicked on submit button");
     }
 
-    private static String logoutButton_xpath() throws InterruptedException {
-        String xpath = ".//*[contains(text(),'Logout')]";
-        return xpath;
-    }
-
-    public static void logoutButton() throws InterruptedException {
-        String xpath = logoutButton_xpath();
-        WebElement element = GetElementByXpathWithoutCondition(xpath);
-        CommonPage.WaitForElementToBeAvailable(xpath);
-        element.click();
-        Log.info("Clicked on Logout Button");
-    }
-
-    public static void emailErrorMessage() throws InterruptedException {
-        String emailError = driver.findElement(By.xpath(".//div[@class='invalid-feedback']")).getText();
-        WebElement element = GetElementByXpathWithoutCondition(emailError);
-        CommonPage.WaitForElementToBeAvailable(emailError);
-        Assert.assertEquals("Email field is required", emailError);
-        Log.info("Received Email Error Message");
-    }
-
-    public static void userNotFoundErrorMessage() throws InterruptedException {
-        String userError = driver.findElement(By.xpath(".//div[@class='invalid-feedback']")).getText();
-        WebElement element = GetElementByXpathWithoutCondition(userError);
-        CommonPage.WaitForElementToBeAvailable(userError);
-        Assert.assertEquals("User not found", userError);
-        Log.info("Received User Error Message");
-    }
-
-    public static void passwordErrorMessage() throws InterruptedException {
-        String passError = driver.findElement(By.xpath(".//div[@class='invalid-feedback']")).getText();
-        WebElement element = GetElementByXpathWithoutCondition(passError);
-        CommonPage.WaitForElementToBeAvailable(passError);
-        Assert.assertEquals("Password is required", passError);
-        Log.info("Received Password Error Message");
+    public static void errorMessage() throws InterruptedException {
+        String error = driver.findElement(By.xpath(".//p")).getText();
+        WebElement element = GetElementByXpathWithoutCondition(error);
+        CommonPage.WaitForElementToBeAvailable(error);
+        Assert.assertEquals("Bad Credentials", error);
+        Log.info("Received Error Message");
     }
 
     public static void refreshWebPage() throws InterruptedException {
